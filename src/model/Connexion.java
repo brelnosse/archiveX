@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Connexion {
-	String url = "jdbc:mysql://localhost:3305/archive";
+	String url = "jdbc:mysql://localhost:3305/archives";
 	String user = "root";
 	String pwd = null;
 	Connection conn = null;	
