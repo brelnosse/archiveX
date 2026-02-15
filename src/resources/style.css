@@ -1,0 +1,7 @@
+.code{
+	-fx-background-color: white;
+}
+.code:disabled{
+	-fx-background-color: white;
+	-fx-opacity: 1;
+}

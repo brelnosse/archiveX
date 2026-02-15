@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="1518.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdatedocformController">
+   <children>
+      <Label layoutX="97.0" layoutY="73.0" text="Liste des documents" textFill="#ff0069">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="46.0" prefWidth="1518.0" style="-fx-background-color: rgb(255,0,105);" text="Modification de document" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="gestTable" layoutX="16.0" layoutY="201.0" prefHeight="717.0" prefWidth="1476.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="46.0" text="id" />
+            <TableColumn fx:id="nomEtCol" prefWidth="249.0" text="nom de/des l'etudiant(s)" />
+            <TableColumn fx:id="nomEnCol" prefWidth="222.0" text="nom de/des encadreur(s)" />
+            <TableColumn fx:id="docCol" prefWidth="154.0" text="Document" />
+            <TableColumn fx:id="depCol" prefWidth="149.0" text="Departement" />
+            <TableColumn fx:id="filCol" prefWidth="135.0" text="Filiere" />
+            <TableColumn fx:id="sujCol" prefWidth="137.0" text="Sujet traitee" />
+            <TableColumn fx:id="domCol" prefWidth="143.0" text="Domaine" />
+            <TableColumn fx:id="typeCol" prefWidth="103.0" text="Type" />
+            <TableColumn fx:id="editCol" prefWidth="137.0" text="Action" />
+         </columns>
+      </TableView>
+      <Button fx:id="returnBtn" layoutX="1345.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleOpenAdminpanel" prefHeight="37.0" prefWidth="146.0" style="-fx-background-color: rgb(255,0,105);" text="retourner" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1328.0" layoutY="165.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="29.0" prefWidth="164.0" style="-fx-background-color: rgb(255,0,105);" text="Actualiser" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="1358.0" layoutY="110.0" size="15" />
+      <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="1345.0" layoutY="184.0" size="15" />
+      <FontAwesomeIconView fill="#ff0069" glyphName="FILE_TEXT_ALT" layoutX="54.0" layoutY="105.0" size="35" />
+   </children>
+</Pane>

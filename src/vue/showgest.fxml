@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="1233.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowgestController">
+   <children>
+      <Label layoutX="68.0" layoutY="60.0" text="Tous les Gestionnaires" textFill="#ff0069">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="46.0" prefWidth="1233.0" style="-fx-background-color: rgb(255,0,105);" text="Tous les gestionnaires" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="gestTable" layoutX="16.0" layoutY="201.0" prefHeight="717.0" prefWidth="1200.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="93.0" text="id" />
+            <TableColumn fx:id="nomCol" prefWidth="147.0" text="nom" />
+            <TableColumn fx:id="prenomCol" prefWidth="165.0" text="prenom" />
+            <TableColumn fx:id="emailCol" prefWidth="317.0" text="email" />
+            <TableColumn fx:id="codeCol" prefWidth="228.0" text="code" />
+            <TableColumn fx:id="dateCol" prefWidth="249.0" text="date d'ajout" />
+            <TableColumn fx:id="docCol" minWidth="0.0" prefWidth="0.0" text="Documents ajoutes" />
+            <TableColumn fx:id="editCol" minWidth="0.0" prefWidth="0.0" text="Action" />
+         </columns>
+      </TableView>
+      <Button fx:id="returnBtn" layoutX="1075.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleOpenAdminpanel" prefHeight="37.0" prefWidth="138.0" style="-fx-background-color: rgb(255,0,105);" text="retourner" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="searchbar" layoutX="14.0" layoutY="128.0" prefHeight="37.0" prefWidth="764.0" promptText="Entrer un nom ou un prenom, ou une adresse email" />
+      <Button layoutX="794.0" layoutY="128.0" mnemonicParsing="false" onAction="#launchSearch" prefHeight="37.0" prefWidth="174.0" style="-fx-background-color: rgb(255,0,105);" text="lancer la recherche" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="refreshBtn" layoutX="1078.0" layoutY="164.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="138.0" style="-fx-background-color: rgb(255,0,105);" text="Actualiser" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <FontAwesomeIconView fill="#ff0069" glyphName="USERS" layoutX="16.0" layoutY="93.0" size="35" />
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="1089.0" layoutY="86.0" size="15" />
+      <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="1095.0" layoutY="183.0" size="15" />
+   </children>
+</Pane>

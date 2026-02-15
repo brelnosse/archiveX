@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="777.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateadmininfoController">
+   <children>
+      <Circle fill="#ff0069" layoutX="-22.0" layoutY="526.0" radius="307.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="74.0" layoutY="28.0" text="Mon compte" textFill="#ff0069">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="317.0" text="Pseudo" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pseudo" layoutX="106.0" layoutY="344.0" prefHeight="44.0" prefWidth="382.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.14176245033740997" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="106.0" layoutY="402.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="106.0" layoutY="429.0" prefHeight="44.0" prefWidth="382.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.14176245033740997" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Label layoutX="106.0" layoutY="481.0" text="Mot de passe" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#ff006a" layoutX="297.0" layoutY="240.0" radius="77.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button fx:id="applyBtn" layoutX="106.0" layoutY="675.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="48.0" prefWidth="382.0" style="-fx-background-color: rgb(255,0,105);" text="Appliquer" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.37931033968925476" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="pseudoChar" layoutX="285.0" layoutY="218.0" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnbtn" layoutX="449.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleOpenAdminpanel" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: rgb(255,0,105);" text="retourner" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="mdp" layoutX="106.0" layoutY="516.0" prefHeight="44.0" prefWidth="382.0" />
+      <Label layoutX="110.0" layoutY="568.0" text="Retaper le mot de passe" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="vmdp" layoutX="106.0" layoutY="593.0" prefHeight="44.0" prefWidth="382.0" />
+      <Label fx:id="msgError" alignment="CENTER" layoutX="6.0" layoutY="102.0" prefHeight="46.0" prefWidth="583.0" style="-fx-background-color: rgb(255,0,105); -fx-padding: 15;" text="Label" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#1f93ff00" layoutX="502.0" layoutY="193.0" radius="15.0" stroke="#ff0069" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fill="#1f93ff00" layoutX="502.0" layoutY="240.0" radius="15.0" stroke="#ff0069" strokeType="INSIDE" strokeWidth="4.0" />
+      <Circle fill="#1f93ff08" layoutX="543.0" layoutY="238.0" radius="9.0" stroke="#ff0069" strokeType="INSIDE" strokeWidth="6.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="460.0" layoutY="55.0" size="15" />
+      <FontAwesomeIconView fill="#ff0069" glyphName="USER" layoutX="39.0" layoutY="60.0" size="30" />
+   </children>
+</Pane>

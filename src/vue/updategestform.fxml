@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="1233.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdategestformController">
+   <children>
+      <Label alignment="CENTER" prefHeight="46.0" prefWidth="1233.0" style="-fx-background-color: rgb(255,0,105);" text="Modification de gestionnaire" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="gestTable" layoutX="16.0" layoutY="201.0" prefHeight="717.0" prefWidth="1200.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="53.0" text="id" />
+          <TableColumn fx:id="nomCol" prefWidth="226.0" text="nom" />
+            <TableColumn fx:id="prenomCol" prefWidth="188.0" text="prenom" />
+            <TableColumn fx:id="emailCol" prefWidth="313.0" text="email" />
+            <TableColumn fx:id="codeCol" prefWidth="178.0" text="code" />
+            <TableColumn fx:id="editCol" prefWidth="241.0" text="Action" />
+        </columns>
+      </TableView>
+      <Button fx:id="returnBtn" layoutX="1078.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleOpenAdminpanel" prefHeight="37.0" prefWidth="138.0" style="-fx-background-color: rgb(255,0,105);" text="retourner" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1078.0" layoutY="164.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="29.0" prefWidth="138.0" style="-fx-background-color: rgb(255,0,105);" text="Actualiser" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="75.0" layoutY="79.0" text="Liste des gestionnaires" textFill="#ff0069">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#ff0069" glyphName="FILE_TEXT_ALT" layoutX="32.0" layoutY="111.0" size="35" />
+      <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" layoutX="1090.0" layoutY="87.0" size="15.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" layoutX="1096.0" layoutY="183.0" size="15.0" />
+   </children>
+</Pane>

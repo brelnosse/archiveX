@@ -1,0 +1,10 @@
+bin/
+.project
+.classpath
+.settings/
+
+.DS_Store
+*.log
+
+src/upload/*
+!src/upload/.gitkeep
